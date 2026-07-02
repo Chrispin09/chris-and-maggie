@@ -244,7 +244,16 @@
     }
     .portrait-groom .portrait-bg { background: linear-gradient(160deg, #2c3e50, #1a252f); }
     .portrait-bride .portrait-bg { background: linear-gradient(160deg, #4a3728, #2d1f15); }
-    .portrait svg { width: 100%; height: 100%; position: absolute; inset: 0; }
+    .portrait svg {
+      .portrait img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+      object-fit: cover;
+      border-radius: 120px 120px 80px 80px;
+    }
+    }
 
     .person-name {
       font-family: 'Playfair Display', serif;
